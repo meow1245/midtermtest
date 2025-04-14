@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>中央美食地圖</title>
+  <style>
+    body {
+      font-family: "Segoe UI", "Microsoft JhengHei", sans-serif;
+      text-align: center;
+      background-color: #fffaf4;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #e67e22;
+      font-size: 36px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .food-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .food-item {
+      width: 300px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 16px;
+      border: 1px solid #ddd; /* ← 加的這一行 */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     transition: transform 0.2s ease-in-out;
+    }
+
+    .food-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .food-item img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #d35400;
+      font-size: 22px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .food-description {
+      margin: 10px 0;
+      font-size: 15px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #3498db;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>中央美食地圖</h1>
+
+  <div class="food-container">
+    <div class="food-item">
+      <h2>迷路</h2>
+      <img src="photo/迷路.jpg" alt="迷路">
+      <p class="food-description">文青風格的咖哩店，濃郁醬汁搭配半熟蛋超好吃！</p>
+      <a href="https://g.co/kgs/cWn3D23" target="_blank">查看位置</a>
+    </div>
+
+    <div class="food-item">
+      <h2>雙響丼</h2>
+      <img src="photo/雙響丼.jpg" alt="雙響丼">
+      <p class="food-description">主打日式丼飯，份量十足、價格實惠，學生最愛！</p>
+      <a href="https://g.co/kgs/LvD2oa5" target="_blank">查看位置</a>
+    </div>
+
+    <div class="food-item">
+      <h2>麥克小姐</h2>
+      <img src="photo/麥克小姐.jpg" alt="麥克小姐">
+      <p class="food-description">隱藏版美式漢堡店，手打牛肉排超厚實又多汁！</p>
+      <a href="https://g.co/kgs/89etxRm" target="_blank">查看位置</a>
+    </div>
+  </div>
+</body>
+</html>
